@@ -36,6 +36,11 @@ p {
 				flex-grow: 1;
 }
 
+a {
+				color: var(--fg);
+				text-decoration: none;
+}
+
 img {
 				max-width: 100%;
 }
@@ -47,6 +52,12 @@ img {
 				top: 0;
 				backdrop-filter: blur(5px);
 				background-color: var(--bg2trans);
+}
+
+.center {
+				display: grid;
+				justify-content: center;
+				text-align: center;
 }
 
 .nav-text {
@@ -71,6 +82,11 @@ img {
 				transform-origin: center;
 }
 
+.nav-items {
+				flex-grow: 1;
+				text-align: center;
+}
+
 .icon {
 				height: 1.5em;
 				width: 1.5em;
@@ -87,8 +103,26 @@ img {
 				}
 }
 
-/* desktop displays */
+/* mobile displays and smaller */
+@media (max-width: 30em) {
+				.nav-items {
+								display: none;
+				}
+}
+
+/* tablet display and bigger */
+@media (min-width: 30em) {
+				.nav-text {
+								display: none;
+				}
+}
+
+/* desktop displays and bigger */
 @media (min-width: 40em) {
+				.nav-text {
+								display: block;
+								flex-grow: 0;
+				}
 				.hero {
 								display: flex;
 				}
