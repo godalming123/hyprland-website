@@ -19,6 +19,10 @@
 
 /* === MAIN STYLES === */
 
+html {
+				scroll-behavior: smooth
+}
+
 body {
 				background-color: var(--bg1);
 				color: var(--fg);
@@ -40,6 +44,29 @@ a {
 
 img {
 				max-width: 100%;
+}
+
+/* === BTNS === */
+
+.btn {
+				padding: 0.5em 1em;
+				background-color: var(--bg4);
+				border-radius: 0.5em;
+				transition: 0.3s;
+}
+
+.btn:hover {
+				filter: brightness(80%);
+}
+
+.btn-primary {
+				background-color: var(--c4);
+				color: black;
+}
+
+.btn-secondary {
+				background-color: var(--c5);
+				color: black;
 }
 
 /* === TYPOGRAPHY === */
@@ -67,11 +94,13 @@ p {
 
 .hero-title {
 		font-size: 3em;
+		margin-bottom: 0px;
 }
 
 .hero div {
 				margin-top: 2em;
 				margin-right: 0.5em;
+				margin-bottom: 2em;
 				flex-grow: 1;
 }
 
@@ -85,10 +114,10 @@ p {
 
 @keyframes float {
 				0%, 100% {
-								transform: translateY(0em)
+								transform: translateY(-0.35em)
 				}
 				50% {
-								transform: translateY(0.7em)
+								transform: translateY(0.35em)
 				}
 }
 
@@ -98,6 +127,7 @@ p {
 				display: flex;
 				align-items:center;
 				position: sticky;
+				z-index: 10;
 				top: 0;
 				backdrop-filter: blur(5px);
 				background-color: var(--bg2trans);

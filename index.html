@@ -7,14 +7,14 @@
   <meta name="description" content="A dynamic tiling window manager that doesnt sacrifice on it looks" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body>
+<body id="top">
 				<div class="nav">
-								<img src="icon.svg" class="nav-logo icon">
-								<span class="nav-text">Hyprland</span>
+								<img src="hyprland-icon.svg" class="nav-logo icon">
+								<a href="#top" class="nav-text">Hyprland</a>
 								<div class="nav-items">
-												<a href="#about">About</a>
-												<a href="#docs">Docs</a>
-												<a href="https://github.com/hyprwm/hyprland">Github</a>
+												<a href="#about"                                  >About </a>
+												<a href="https://github.com/hyprwm/Hyprland/wiki/">Docs  </a>
+												<a href="https://github.com/hyprwm/hyprland"      >Github</a>
 								</div>
 								<svg class="nav-menu icon" width="90" height="65" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<line id="menuline1" y1="2.5" x2="40" y2="2.5" stroke="white" stroke-width="5"/>
@@ -23,7 +23,7 @@
 								</svg>
 				</div>
 				<div class="hero">
-								<svg id="hero-blob" width="900" height="700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+								<svg id="hero-blob" width="530" height="700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 												<g transform="translate(300 250)">
 																<path d="M142 -166.1C182.1 -135.7 211.2 -89 220.8 -38.4C230.3 12.3 220.4 66.9 196 117C171.6 167.1 132.9 212.8 82.3 235C31.8 257.2 -30.4 255.9 -86.5 236.2C-142.6 216.4 -192.6 178.2 -219.8 128.3C-247 78.3 -251.5 16.6 -243.3 -45.1C-235 -106.7 -213.9 -168.3 -171.2 -198.2C-128.6 -228.2 -64.3 -226.6 -6.6 -218.7C51 -210.8 102 -196.5 142 -166.1" fill="#3b4252"></path>
 												</g>
@@ -31,10 +31,11 @@
 								<div>
 												<h1 class="hero-title">Hyprland</h1>
 												<p>A dynamic tiling wm that does'nt sacrifice on its looks</p>
+												<a href="https://github.com/hyprwm/Hyprland/wiki/Installation" class="btn btn-primary">Get hyprland</a>
 								</div>
-								<img src="img.png" class="hero-image">
+								<img src="hyprland-rice.png" class="hero-image">
 				</div>
-				<section class="about">
+				<section class="about" id="about">
 								<h1>About</h1>
 								<p>Hyprland is a tiling window manager that animates everything, is built on wayland and has an easy to maintain codebase.</p>
 				</section>
