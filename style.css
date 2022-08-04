@@ -1,0 +1,100 @@
+:root {
+				--bg1trans: #2e344066;
+				--bg2trans: #3b425266;
+				--bg3trans: #434c5e;
+				--bg4trans: #4c566a;
+	
+				--bg1: #2e3440;
+				--bg2: #3b4252;
+				--bg3: #434c5e;
+				--bg4: #4c566a;
+				--fg: #FFFFFF;
+				--c1: #bf616a;
+				--c2: #d08770;
+				--c3: #ebcb8b;
+				--c4: #a3be8c;
+				--c5: #b48ead;
+}
+
+body {
+				background-color: var(--bg1);
+				color: var(--fg);
+				margin: 0;
+}
+
+body > * {
+				padding: 1em 2em;
+}
+
+p {
+				line-height: 1.5;
+}
+
+.hero div {
+				margin-top: 2em;
+				margin-right: 0.5em;
+				flex-grow: 1;
+}
+
+img {
+				max-width: 100%;
+}
+
+.nav {
+				display: flex;
+				align-items:center;
+				position: sticky;
+				top: 0;
+				backdrop-filter: blur(5px);
+				background-color: var(--bg2trans);
+}
+
+.nav-text {
+				flex-grow: 1;
+				text-align: center;
+				font-weight: bold;
+}
+
+.nav-menu {
+				cursor: pointer;
+				overflow: visible;
+}
+
+#menuline1 {transition: 0.3s 0.0s;}
+#menuline2 {transition: 0.3s 0.1s;}
+#menuline3 {transition: 0.3s 0.2s;}
+
+.nav-menu:hover #menuline1,
+.nav-menu:hover #menuline2,
+.nav-menu:hover #menuline3 {
+				transform: scaleX(1.3);
+				transform-origin: center;
+}
+
+.icon {
+				height: 1.5em;
+				width: 1.5em;
+}
+
+.hero {
+				background-color: var(--bg2)
+}
+
+/* super small displays */
+@media (max-width: 13em) {
+				.nav-text {
+								display: none;
+				}
+}
+
+/* desktop displays */
+@media (min-width: 40em) {
+				.hero {
+								display: flex;
+				}
+				.hero-image {
+								max-width: 60vw;
+				}
+}
+
+
