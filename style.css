@@ -217,6 +217,16 @@ p {
 								display: none;
 				}
 
+				.back-btn {
+								font-size: 2em;
+								padding: 1em 2em;
+								display: block;
+								background-color: var(--bg2trans);
+								top: 0;
+								position: sticky;
+								backdrop-filter: blur(5px);
+				}
+
 				.container {
 								display: flex;
 								overflow-y: auto;
@@ -240,8 +250,9 @@ p {
 				  overflow-y: auto;
 				}
 
-				.sidenav > ul > li {
-								list-style: none;
+				.sidenav > a {
+								display: block;
+								font-size: 1.1em;
 				}
 }
 
