@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="animation: reveal 1s;">
 <head>
   <title>Hyprland</title>
   <meta charset="UTF-8" />
@@ -9,6 +9,22 @@
   <link defer rel="manifest" href="manifest.json" />
 	<link rel="icon" href="icon.png">
 	<script defer type="module" src="index.js"></script>
+<style>
+				@keyframes reveal {
+								0% {
+												opacity: 0;
+												scale: 0.7;
+												clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+								}
+								15% {
+												scale: 0.55;
+								}
+								100% {
+												scale: 1;
+												clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+								}
+				}
+</style>
 </head>
 <body id="top">
 				<div class="container">

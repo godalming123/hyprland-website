@@ -1,4 +1,4 @@
-const cacheName = "pwa-cache-v1";
+const cacheName = "pwa-cache-v2";
 const startUrl = "https://godalming123.github.io/hyprland-website/"
 const failedPage = startUrl + "404.html"
 
