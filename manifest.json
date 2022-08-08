@@ -1,13 +1,28 @@
 {
-    "lang": "en",
-    "dir": "ltr",
-    "name": "Hyprland",
-    "short_name": "Hyprland",
-    "description" : "A wlroots tiling wayland compositer",
-    "theme_color": "#a3be8c",
-    "background_color": "#a3be8c",
-    "start_url": "https://godalming123.github.io/hyprland-website",
-    "scope" : "https://godalming123.github.io/hyprland-website",
-    "display": "standalone",
-    "orientation": "natural"
+				"lang": "en",
+				"dir": "ltr",
+				"name": "Hyprland",
+				"short_name": "Hyprland",
+				"description" : "A wlroots tiling wayland compositer",
+				"icons": [
+								{
+												"src": "hyprland-icon.svg",
+												"sizes": "32x32",
+												"type": "image/png",
+												"purpose": "any"
+								},
+								{
+												"src": "hyprland-icon.svg",
+												"sizes": "144x144",
+												"type": "image/png",
+												"purpose": "any"
+								}
+
+				],
+				"theme_color": "#a3be8c",
+				"background_color": "#a3be8c",
+				"start_url": "https://godalming123.github.io/hyprland-website/",
+				"scope" :    "https://godalming123.github.io/hyprland-website/",
+				"display": "standalone",
+				"orientation": "natural"
   }
