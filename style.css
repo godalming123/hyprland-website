@@ -21,7 +21,8 @@
 
 * {
 				box-sizing: border-box;
-				scroll-behavior: smooth
+				scroll-behavior: smooth;
+				-webkit-tap-highlight-color: transparent !important;
 }
 
 body {
@@ -93,7 +94,7 @@ p {
 /* === HERO === */
 
 #hero-blob {
-				position: absolute;
+				position: fixed;
 				z-index: -1;
 }
 
