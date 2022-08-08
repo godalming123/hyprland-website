@@ -218,7 +218,7 @@ p {
 				}
 
 				.back-btn {
-								font-size: 2em;
+								font-size: 1.17em !important;
 								padding: 1em 2em;
 								display: block;
 								background-color: var(--bg2trans);
