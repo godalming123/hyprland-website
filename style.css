@@ -14,7 +14,24 @@
 				--c2: #d08770;
 				--c3: #ebcb8b;
 				--c4: #a3be8c;
-				--c5: #b48ead;
+}
+
+@media (prefers-color-scheme: light) {
+				:root {
+								--bg1trans: #FFFFFF66;
+								--bg2trans: #eceff266;
+								--bg3trans: #e5e9f066;
+								--bg4trans: #d8dee966;
+								--bg1: #FFFFFF;
+								--bg2: #eceff4;
+								--bg3: #e5e9f0;
+								--bg4: #d8dee9;
+								--fg: #000000;
+								--c1: #5e81ac;
+								--c2: #81a1c1;
+								--c3: #8fbcbb;
+								--c4: #88c0d0;
+				}
 }
 
 /* === MAIN STYLES === */
@@ -100,7 +117,7 @@ p {
 
 .hero-title {
 		font-size: 3em;
-		margin-bottom: 0px;
+		margin: 0px;
 }
 
 .hero div {
@@ -175,6 +192,10 @@ p {
 .icon {
 				height: 1.5em;
 				width: 1.5em;
+}
+
+#hero-blob-path {
+				fill: var(--bg2);
 }
 
 /* === MENU ICON TRANSITION === */
