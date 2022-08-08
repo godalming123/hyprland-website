@@ -19,7 +19,8 @@
 
 /* === MAIN STYLES === */
 
-html {
+* {
+				box-sizing: border-box;
 				scroll-behavior: smooth
 }
 
@@ -29,8 +30,12 @@ body {
 				margin: 0;
 }
 
-body > * {
+.content > * {
 				padding: 1em 2em;
+}
+
+#content {
+				padding: 0;
 }
 
 section {
@@ -98,9 +103,8 @@ p {
 }
 
 .hero div {
-				margin-top: 2em;
-				margin-right: 0.5em;
-				margin-bottom: 2em;
+				text-align: center;
+				margin: 2em;
 				flex-grow: 1;
 }
 
@@ -131,6 +135,7 @@ p {
 				top: 0;
 				backdrop-filter: blur(5px);
 				background-color: var(--bg2trans);
+				padding: 1em 2em;
 }
 
 .nav-text {
@@ -161,6 +166,11 @@ p {
 				text-align: center;
 }
 
+#content {
+  position: sticky;
+  top: 0;
+}
+
 .icon {
 				height: 1.5em;
 				width: 1.5em;
@@ -168,15 +178,28 @@ p {
 
 /* === MENU ICON TRANSITION === */
 
-#menuline1 {transition: 0.3s 0.0s;}
-#menuline2 {transition: 0.3s 0.1s;}
-#menuline3 {transition: 0.3s 0.2s;}
+@keyframes scale {
+			0%,100% {
+				transform: scaleX(1);
+			}
+			50% {
+				transform: scaleX(1.3);
+			}
+}
+
+#menuline1 {animation-delay: 0s}
+#menuline2 {animation-delay: 0.1s}
+#menuline3 {animation-delay: 0.2s}
+
+#menuline1, #menuline2, #menuline3 {
+				transform-origin: center;
+}
 
 .nav-menu:hover #menuline1,
 .nav-menu:hover #menuline2,
 .nav-menu:hover #menuline3 {
-				transform: scaleX(1.3);
-				transform-origin: center;
+				animation-name: scale;
+				animation-duration: 0.3s;
 }
 
 /* === RESPONSIVE === */
@@ -193,6 +216,33 @@ p {
 				.nav-items {
 								display: none;
 				}
+
+				.container {
+								display: flex;
+								overflow-y: auto;
+								height: 100vh;/*height must be set for scroll containers to work winth position sticky*/
+								overflow-x: auto;
+								scroll-snap-type: x mandatory;
+				}
+
+				.container > * {
+								scroll-snap-align: start;
+								scroll-snap-type: x;
+								min-width: 100vw; /* force the content to be all the screen width */
+				}
+
+				.sidenav {
+				  text-align: center;
+				  position: sticky;
+				  top: 0;
+				  margin: 0;
+				  max-height: 100vh;
+				  overflow-y: auto;
+				}
+
+				.sidenav > ul > li {
+								list-style: none;
+				}
 }
 
 /* tablet display and bigger */
@@ -201,6 +251,9 @@ p {
 								display: none;
 				}
 				.nav-menu {
+								display: none;
+				}
+				.sidenav {
 								display: none;
 				}
 }
@@ -213,6 +266,7 @@ p {
 				}
 				.hero {
 								display: flex;
+								align-items: center;
 				}
 				.hero-image {
 								max-width: 60vw;
