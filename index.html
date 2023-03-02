@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" style="animation: reveal 1s;">
 <head>
-  <title>Hyprland</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="A dynamic tiling window manager that doesnt sacrifice on it looks" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+	<link rel="icon" href="icon.png" />
+	<title>Hyprland</title>
+	<meta name="description" content="A dynamic tiling window manager that doesnt sacrifice on it looks." />
+
+	<link defer rel="manifest" href="manifest.json" />
 	<link rel="stylesheet" type="text/css" href="style.css" />	
-  <link defer rel="manifest" href="manifest.json" />
-	<link rel="icon" href="icon.png">
 	<script defer type="module" src="index.js"></script>
-<style>
-				@keyframes reveal {
-								0% {
-												opacity: 0;
-												scale: 0.7;
-												clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-								}
-								15% {
-												scale: 0.55;
-								}
-								100% {
-												scale: 1;
-												clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-								}
-				}
-</style>
+	<style>
+		@keyframes reveal {
+			0% {
+				opacity: 0;
+				scale: 0.7;
+				clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+			}
+			15% {
+				scale: 0.55;
+			}
+			100% {
+				scale: 1;
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+			}
+		}
+	</style>
 </head>
 <body id="top">
 				<div class="container">
@@ -34,9 +36,9 @@
 																<svg class="nav-logo icon" fill="none" viewBox="0 0 32 42" xmlns="http://www.w3.org/2000/svg">
 																				<path fill="transparent" stroke="currentColor" stroke-width="6"
 																								d="M15 3
-																								   Q16.5 6.8 25 18
-																								   A12.8 12.8 0 1 1 5 18
-																								   Q13.5 6.8 15 3z" />
+																									 Q16.5 6.8 25 18
+																									 A12.8 12.8 0 1 1 5 18
+																									 Q13.5 6.8 15 3z" />
 																</svg>
 																<a href="#top" class="nav-text">Hyprland</a>
 																<div class="nav-items">
